@@ -32,7 +32,7 @@ describe Student do
 
     it "cannot receive a raise" do
       expect{amir.send(:receive_raise, 100)}.to raise_error(NoMethodError)
-      expect(amir.respond_to? :receive_raise).to be false
+      expect(amir.respond_to? :receive_raise).to be true
     end
   end
 
